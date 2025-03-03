@@ -1,7 +1,7 @@
 
 # Container Orechestror
 
-<img src="images/my-image.png" alt="My Image" width="400">
+<img src="containerOrechstration.png" alt="My Image" width="400">
 
 
 ## Tasks Associated with containers.
