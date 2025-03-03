@@ -17,7 +17,7 @@ These instances serve as the worker nodes in your Kubernetes cluster.
 - Define min/Max number of instances
 - Specify which Cluster you need to connect to
 
-Difference between managed Node group and Self Managed Node group.
+## Difference between managed Node group and Self Managed Node group.
 <img src="NodeGroups.png" alt="My Image" width="400">
 
 ## Connect to Cluster
