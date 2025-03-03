@@ -18,7 +18,7 @@ These instances serve as the worker nodes in your Kubernetes cluster.
 - Specify which Cluster you need to connect to
 
 Difference between managed Node group and Self Managed Node group.
-<img src="images/my-image.png" alt="My Image" width="400">
+<img src="NodeGroups.png" alt="My Image" width="400">
 
 ## Connect to Cluster
 - kubectl config set-cluster
