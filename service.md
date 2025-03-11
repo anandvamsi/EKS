@@ -47,15 +47,25 @@ spec:
 - Exposes the service internally within the cluster.
 - Cannot be accessed from outside the cluster.
 
-<img src="service-1.png" alt="My Image" width="500">
+<img src="service-clusterIP.png" alt="My Image" width="500">
+<img src="service-clusterIP2.png" alt="My Image" width="500">
 
 ## Node Port
 - Exposes the service externally by assigning a static port (30000-32767) on each Node.
-- Can be accessed via <NodeIP>:<NodePort>.
+- Can be accessed via ```<NodeIP>:<NodePort>```
 
 ### Use cases
 - Useful for testing or accessing a service from outside the cluster without a LoadBalancer.
 - Not recommended for production due to security concerns.
 
-<img src="service-1.png" alt="My Image" width="500">
+<img src="service-NodePort.png" alt="My Image" width="500">
+<img src="service-NodePort2.png" alt="My Image" width="500">
+<img src="service-NodePort3.png" alt="My Image" width="500">
 
+## Load Balancer.
+- Exposes the service externally using a cloud provider’s Load Balancer.
+- Works with AWS, Azure, GCP, etc.
+- Used for production deployments where external users need access.
+- Ideal for web applications, APIs, and mobile backend services.
+
+<img src="service-LoadBalancer.png" alt="My Image" width="500">
