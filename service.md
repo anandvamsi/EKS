@@ -1,7 +1,8 @@
 # Service in Kubernetes.
 
 
-## What problems does the service solves.
+## What problems does the service solves:
+
 Imagine we have front application in node1 which needs to access Backend(MySQL) pods. One of the way to access is using the IP address of the pod.
 - what if the pod fails, rs will create new pod which comes new IP:- which again needs to be updated to frontend apps pods
 - what if Backend apps needs to service  more traffic:- which needs update
@@ -27,8 +28,34 @@ spec:
   selector:
     app: my-app
   ports:
+
+## Types of service
+- CluserIP
+- NodePort
+- Load Balancer.
     - protocol: TCP
       port: 80
       targetPort: 8080
   type: ClusterIP
 ```
+## Types for service.
+- Cluster IP
+- Node Port
+- Load Balancer
+
+## Cluster IP
+- Exposes the service internally within the cluster.
+- Cannot be accessed from outside the cluster.
+
+<img src="service-1.png" alt="My Image" width="500">
+
+## Node Port
+- Exposes the service externally by assigning a static port (30000-32767) on each Node.
+- Can be accessed via <NodeIP>:<NodePort>.
+
+### Use cases
+- Useful for testing or accessing a service from outside the cluster without a LoadBalancer.
+- Not recommended for production due to security concerns.
+
+<img src="service-1.png" alt="My Image" width="500">
+
