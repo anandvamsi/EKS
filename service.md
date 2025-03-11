@@ -7,7 +7,9 @@ Imagine we have front application in node1 which needs to access Backend(MySQL) 
 - what if Backend apps needs to service  more traffic:- which needs update
 
 
+<img src="service-1.png" alt="My Image" width="500">
 
+<img src="service-2.png" alt="My Image" width="500">
 ## What is service.
 ```bash
 Kubernetes Services provide consistent, reliable communication between applications by abstracting dynamic Pod IPs, enabling load balancing, service discovery, and external access.
