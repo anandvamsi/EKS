@@ -23,6 +23,8 @@ You tell Kubernetes what you want – You create a Deployment and specify things
 A Kubernetes Deployment is a way to manage and control how your application runs in a Kubernetes cluster.
 It ensures your application is always available, scalable, and can be updated without downtime.
 ```
+<img src="Deployment.png" alt="deployment" width="500">
+
 
 ## key Features of Deployment
 
