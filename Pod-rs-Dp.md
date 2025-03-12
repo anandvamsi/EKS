@@ -1,3 +1,31 @@
+
+# Replica Set
+
+## Why is a ReplicaSet Important?
+
+- Ensures high availability – Keeps your application running by maintaining the desired number of Pods.
+- Self-healing – If a Pod fails, it gets replaced automatically.
+- Scalability – You can increase or decrease the number of Pods easily.
+
+## what is Replica set.
+A ReplicaSet (RS) is a Kubernetes object that ensures a specified number of identical Pods are always running. 
+If a Pod crashes or gets deleted, the ReplicaSet automatically creates a new one to maintain the desired number of replicas.
+
+<img src="replicaset.png" alt="replicaset" width=500>
+
+## When to Use a ReplicaSet?
+- If you only need to maintain a fixed number of Pods without updates.
+- If you don’t need rolling updates or rollbacks
+
+In most cases, use a Deployment instead, because it automatically creates a ReplicaSet and handles updates better
+
+## Commands associated with deployment.
+```bash
+kubectl create rs my-app-rs --image=nginx --replicas=3 ::- To create replicaset.
+kubectl scale rs my-app-rs --replicas=5
+kubectl delete rs my-app-rs
+```
+
 # Deployment
 
 ## Understanding Deployment with an exmaple.
