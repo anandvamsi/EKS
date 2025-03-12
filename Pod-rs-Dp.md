@@ -1,3 +1,25 @@
+# Pod
+A Pod is the smallest and simplest unit in Kubernetes. It represents a single instance of a running process in your cluster
+
+A Pod encapsulates:
+- One or more containers (usually Docker containers).
+- Storage (volumes) if needed.
+- Networking (each Pod gets a unique IP).
+- Configuration (like environment variables).
+
+<img src="pod.png" alt="replicaset" width=500>
+
+## Commands associated with Pod
+```
+kubectl run my-pod --image=nginx --restart=Never
+kubectl get pods
+kubectl describe pod my-pod
+kubectl delete pod my-pod
+```
+
+<img src="podcycle.png" alt="replicaset" width=500>
+<img src="pod-table.png" alt="replicaset" width=500>
+
 
 # Replica Set
 
