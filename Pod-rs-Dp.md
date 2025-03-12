@@ -14,7 +14,10 @@ A Pod encapsulates:
 kubectl run my-pod --image=nginx --restart=Never
 kubectl get pods
 kubectl describe pod my-pod
+kubectl logs my-pod
 kubectl delete pod my-pod
+kubectl delete pod my-pod --force --grace-period=0 ::- if pod is taking alot of time.
+
 ```
 
 <img src="podcycle.png" alt="replicaset" width=500>
