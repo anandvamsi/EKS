@@ -6,8 +6,15 @@ eksctl is a CLI tool created by Weaveworks to simplify the creation and manageme
 It automates many of the manual steps required to set up an EKS cluster, such as provisioning worker nodes, setting up IAM roles, and configuring networking
 ```
 EKS support both managed as well as fargate node group.
-
 - IaC- Terraform/Pulumi
+
+## EKSCTL installation 
+```bash
+curl -sSL "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_Linux_amd64.tar.gz" -o eksctl.tar.gz
+tar -xvzf eksctl.tar.gz
+cp eksctl /usr/local/bin
+eksctl version
+```
 
 
 ## Create Cluster using EKSCTL
