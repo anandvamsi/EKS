@@ -50,7 +50,7 @@ managedNodeGroups:
 eksctl create cluster -f cluster-creation.yaml
 2025-03-15 05:49:00 [ℹ]  eksctl version 0.205.0
 2025-03-15 05:49:00 [ℹ]  using region us-west-2
-2025-03-15 05:49:00 [✔]  using existing VPC (vpc-095f761a169c10b8e) and subnets (private:map[us-east-1b:{subnet-0bc434d8c9f250263 us-west-2b 10.80.225.0/24 0 } us-west-1a:{subnet-047c8caae88d24be6 us-west-2a 10.80.224.0/24 0 }] public:map[])
+2025-03-15 05:49:00 [✔]  using existing VPC (vpc-095fXX0b8e) and subnets (private:map[us-east-1b:{subnet-0bc434d8XXXXX250263 us-west-2b 10.80.225.0/24 0 } us-west-1a:{subnet-047c8caae88d24be6 us-west-2a 10.90.224.0/24 0 }] public:map[])
 2025-03-15 05:49:00 [!]  custom VPC/subnets will be used; if resulting cluster doesn't function as expected, make sure to review the configuration of VPC/subnets
 2025-03-15 05:49:00 [ℹ]  nodegroup "nodes-general" will use "" [AmazonLinux2/1.25]
 2025-03-15 05:49:00 [ℹ]  using Kubernetes version 1.25
@@ -114,7 +114,7 @@ eksctl create cluster -f cluster-creation.yaml
 eksctl create cluster -f cluster-creation.yaml
 2025-03-15 05:49:00 [ℹ]  eksctl version 0.205.0
 2025-03-15 05:49:00 [ℹ]  using region us-west-2
-2025-03-15 05:49:00 [✔]  using existing VPC (vpc-095f761a169c10b8e) and subnets (private:map[us-east-1b:{subnet-0bc434d8c9f250263 us-west-2b 10.80.225.0/24 0 } us-west-1a:{subnet-047c8caae88d24be6 us-west-2a 10.80.224.0/24 0 }] public:map[])
+2025-03-15 05:49:00 [✔]  using existing VPC (vpc-095fXXXXX10b8e) and subnets (private:map[us-east-1b:{subnet-0bc4XXX5X20263 us-west-2b 10.80.225.0/24 0 } us-west-1a:{subnet-XXXXXaae88d24be6 us-west-2a 10.80.224.0/24 0 }] public:map[])
 2025-03-15 05:49:00 [!]  custom VPC/subnets will be used; if resulting cluster doesn't function as expected, make sure to review the configuration of VPC/subnets
 2025-03-15 05:49:00 [ℹ]  nodegroup "nodes-general" will use "" [AmazonLinux2/1.25]
 2025-03-15 05:49:00 [ℹ]  using Kubernetes version 1.25
@@ -166,12 +166,12 @@ eksctl create cluster -f cluster-creation.yaml
 2025-03-15 06:01:32 [ℹ]  no tasks
 2025-03-15 06:01:32 [✔]  all EKS cluster resources for "N6" have been created
 2025-03-15 06:01:32 [ℹ]  nodegroup "nodes-general" has 2 node(s)
-2025-03-15 06:01:32 [ℹ]  node "ip-10-80-224-97.us-west-2.compute.internal" is ready
-2025-03-15 06:01:32 [ℹ]  node "ip-10-80-225-18.us-west-2.compute.internal" is ready
+2025-03-15 06:01:32 [ℹ]  node "ip-10-90-224-97.us-west-2.compute.internal" is ready
+2025-03-15 06:01:32 [ℹ]  node "ip-10-90-225-18.us-west-2.compute.internal" is ready
 2025-03-15 06:01:32 [ℹ]  waiting for at least 2 node(s) to become ready in "nodes-general"
 2025-03-15 06:01:32 [ℹ]  nodegroup "nodes-general" has 2 node(s)
-2025-03-15 06:01:32 [ℹ]  node "ip-10-80-224-97.us-west-2.compute.internal" is ready
-2025-03-15 06:01:32 [ℹ]  node "ip-10-80-225-18.us-west-2.compute.internal" is ready
+2025-03-15 06:01:32 [ℹ]  node "ip-10-90-224-97.us-west-2.compute.internal" is ready
+2025-03-15 06:01:32 [ℹ]  node "ip-10-90-225-18.us-west-2.compute.internal" is ready
 2025-03-15 06:01:32 [✔]  created 1 managed nodegroup(s) in cluster "N6"
 2025-03-15 06:01:33 [ℹ]  kubectl command should work with "/home/ec2-user/.kube/config", try 'kubectl get nodes'
 2025-03-15 06:01:33 [✔]  EKS cluster "N6" in "us-west-2" region is ready
