@@ -195,6 +195,14 @@ kubectl config view --minify --flatten
 ```bash
 kubectl get nodes
 ```
+
+## To list clusters
+```bash
+eksctl get clusters --region us-west-2
+NAME    REGION          EKSCTL CREATED
+N6      us-west-2       True
+```
+
 ### To delete the cluster
 ```bash
 eksctl delete cluster -n <name>
